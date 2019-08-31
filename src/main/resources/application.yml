@@ -1,0 +1,20 @@
+spring:
+  resources:
+    static-locations: classpath:/
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .html
+    content-type: text/html
+    charset: UTF-8
+  datasource:
+    url: jdbc:mysql://10.40.40.139:3306/security
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: true
+
